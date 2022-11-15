@@ -1,9 +1,10 @@
 import { StyleSheet } from "react-native";
+import colors from "../../constants/colors";
 
 export const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#ffffff',
-        shadowColor: "#000",
+        backgroundColor: colors.white,
+        shadowColor: colors.black,
         shadowOffset: {
             width: 0,
             height: 1,
