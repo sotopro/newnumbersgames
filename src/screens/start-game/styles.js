@@ -20,13 +20,13 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
     },
     inputContainer: {
+        width: '70%',
         justifyContent: 'center',
         alignItems: 'center',
         marginHorizontal: 20,
         paddingVertical: 20,
     },
     input: {
-        width: '100%',
         minWidth: 70,
         fontSize: 22,
         paddingVertical: 10,
