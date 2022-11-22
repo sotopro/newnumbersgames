@@ -27,7 +27,18 @@ export default function App() {
   }
 
   let content =  <StartGame onStartGame={onStartGame} />
-  const title = userNumber ? "Let's Play" : 'Welcome';
+
+  const getTitle = () => {
+    let title;
+    if(userNumber && guessRounds <= 0) {
+      title = 'Guess a Number';
+    } else if (guessRounds > 0) {
+      title = 'Game Over';
+    } else {
+      title = 'Welcome';
+    }
+    return title;
+  }
 
   if (userNumber && guessRounds <= 0) {
     content = <Game selectedNumber={userNumber} onGameOver={onGameOver} />
@@ -45,7 +56,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Header title={title}/>
+      <Header title={getTitle()}/>
       {content}
     </View>
   );
