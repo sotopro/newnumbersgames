@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { ActivityIndicator, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, View, SafeAreaView, StatusBar } from 'react-native';
 import { Header } from './components';
 import colors from './constants/colors';
 import { Game, StartGame, GameOver } from './screens/index';
@@ -55,10 +55,10 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Header title={getTitle()}/>
       {content}
-    </View>
+    </SafeAreaView>
   );
 }
 

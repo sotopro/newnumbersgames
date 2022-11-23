@@ -9,11 +9,20 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     content: {
-        width: width * 0.8,
+        width: '80%',
         paddingVertical: 20,
         justifyContent: 'center',
         alignItems: 'center',
     },
+    contentLandscape: { 
+        flex: 1,
+        width: '80%',
+        paddingVertical: 20,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+    },
+    contentDetails: {},
     textContent: {
         fontSize: 16,
         textAlign: 'center',
